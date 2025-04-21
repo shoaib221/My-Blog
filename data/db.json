@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "author": "mario",
+      "id": "1"
+    },
+    {
+      "title": "Opening Party!",
+      "body": "Why do we use it? .",
+      "author": "yoshi",
+      "id": "2"
+    },
+    {
+      "id": "0be4",
+      "title": "Abar Hashimukh",
+      "body": "Shei Kobe chilo ucchash",
+      "author": "yoshi"
+    }
+  ],
+  "cars": [
+    {
+      "model": "toyota-corolla",
+      "price": 3000,
+      "id": "d0e4"
+    },
+    {
+      "model": "mercedes-benz",
+      "price": 5000,
+      "id": "e329"
+    }
+  ]
+}

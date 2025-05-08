@@ -13,5 +13,5 @@ If you are developing a production application, we recommend using TypeScript an
 
 
 ## deploy
-npm run dev
-npx json-server --watch data/db.json
+npm run dev.
+npx json-server --watch data/db.json.

@@ -1,13 +1,16 @@
-import {  Link } from 'react-router-dom';
-import useFetch from './useFetch'
 
-const BlogList = ( props ) =>
+
+import {  Link } from 'react-router-dom';
+import { useBooks } from './hooks';
+
+
+export const Booklist = (  ) =>
 {
-  const blogs = props.blogs;
+  const { books } = useBooks();
 
   return (
     <div className="blog-list">
-      {blogs.map(blog => (
+      {books.map(blog => (
         <div className="blog-preview" key={blog.id} >
             <Link to={`/blog/${blog.id}`}>
               <h2>{ blog.title }</h2>
@@ -20,17 +23,3 @@ const BlogList = ( props ) =>
 
 }
 
-const Blog = () => {
-
-  const { data, isPending, error } = useFetch( 'http://localhost:3000/blogs/' );
-
-  return (
-    <div>
-    {data && <BlogList blogs={data} /> }
-    </div>
-  );
-}
-
-
- 
-export default Blog;
